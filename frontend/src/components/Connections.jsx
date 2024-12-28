@@ -2,7 +2,7 @@ import axios from "axios";
 import { BASE_URL } from "../utils/constants";
 import { useEffect } from "react";
 import { connect, useDispatch, useSelector } from "react-redux";
-import { addConnections } from "../utils/connectionSlice";
+import { addConnections } from "../utils/conectionSlice";
 
 const Connections = () => {
   const connections = useSelector((store) => store.connections);

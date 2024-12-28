@@ -22,12 +22,6 @@ app.use("/", requestRouter);
 app.use("/", userRouter);
 
 
-
-
-
-
-
-
 connectDB().then(() => {
     console.log("Database Connect established");
     app.listen(7777, () =>{
@@ -36,6 +30,5 @@ connectDB().then(() => {
 }).catch(err => {
     console.error("Database can not be connected !!!");
 });
-
 
 
