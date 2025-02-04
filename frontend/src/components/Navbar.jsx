@@ -4,7 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { BASE_URL } from "../utils/constants";
 import { removeUser } from "../utils/userSlice";
 
-const NavBar = () => {
+const Navbar = () => {
   const user = useSelector((store) => store.user);
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -66,4 +66,4 @@ const NavBar = () => {
     </div>
   );
 };
-export default NavBar;
+export default Navbar;
